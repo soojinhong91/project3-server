@@ -10,15 +10,15 @@ router.post("/register", async (req, res) => {
 
     // validate
     if (!email || !password || !passwordCheck)
-      return res.status(400).json({ msg: "Not all fields have been entered." });
+      return res.status(400).json({ msg: "Please fill out all fields." });
     if (password.length < 5)
       return res
         .status(400)
-        .json({ msg: "The password needs to be at least 5 characters long." });
+        .json({ msg: "The password must be at least 4 characters." });
     if (password !== passwordCheck)
       return res
         .status(400)
-        .json({ msg: "Enter the same password twice for verification." });
+        .json({ msg: "Password confirmation doesn't match." });
 
     const existingUser = await User.findOne({ email: email });
     if (existingUser)
@@ -49,7 +49,7 @@ router.post("/login", async (req, res) => {
 
     // validate
     if (!email || !password)
-      return res.status(400).json({ msg: "Not all fields have been entered." });
+      return res.status(400).json({ msg: "Please fill out all fields." });
 
     const user = await User.findOne({ email: email });
     if (!user)
