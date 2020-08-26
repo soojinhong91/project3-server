@@ -1,33 +1,38 @@
 # Project3-New South Waves
-This is the final project completed as part of a Software Engineer Immersive course at GA Sydney. The purpose of this project was to build a web application from scratch, based on React/Node.js knowledge along with MongoDB.
 
-'New South Waves' is a web application where you can book surfing product as well as some beach product you would need. Users can also sign up and browse the available products, or get information about the animal rescue centres.
+This is the final project completed as part of a Software Engineer Immersive course at GA Sydney. The purpose of this project was to build a web application from scratch, using MERN stack.
 
-[Play Demo Here](https://inspiring-hamilton-ec1de5.netlify.app/)
+'New South Waves' is a web application where you can book surfing product as well as some beach product you would need.
 
-## Table of contents
-* [Technologies](#technologies)
-* [Try out](#try-out)
-* [Features](#features)
+[Play Demo Here](https://newsouthwaves.netlify.app)
+
+[Check out client](https://github.com/soojinhong91/project3-client)
 
 ## Technologies
-* MERN (MongoDB, Express, React, Node)
-* Bootstrap
-* Cloudinary
-* Heroku
 
-## Try out
-Here's the [link to try out](https://inspiring-hamilton-ec1de5.netlify.app/)
+- MERN (MongoDB, Express, React, Node)
+- Bootstrap
+- Cloudinary
+- Netlify, Heroku
 
 ## Features
-List of features ready and TODOs for future development
-* Mainly build on React
-* User login : Authentication/Sessions
-* Heroku Deployment
-* Datetime picker: https://github.com/Hacker0x01/react-datepicker/
 
-To-do list:
-* My Cart
-* Set the maximum stock number
-* Implement Weather API
-* Fix User login credential
+- MongoDB: Setup Mongoose & Model
+- Middleware : User registration, User Login
+
+## npm packages
+
+`npm install nodemon express mongoose cors dotenv bcryptjs jsonwebtoken body-parser`
+
+- **nodemon**: Automatically restarting the node application when file changes are detected
+- **express**: Allows to set up middlewares to respond to HTTP Requests
+- **mongoose**: Enables node.js to interact with MongoDB
+- **cors**: Enables Cross Origin Resource Sharing(CORS) in node.js
+- **dotenv**: To store environment variables
+- **bcryptjs**: To hash and compare passwords
+- **jsonwebtoken**: For user authentication
+- **body-parser**: Parsing incoming request bodies in a middleware
+
+## Things to improve
+
+- **Refactoring**: userRouter need to be more DRY and readable
