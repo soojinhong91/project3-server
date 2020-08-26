@@ -15,11 +15,6 @@ This is the final project completed as part of a Software Engineer Immersive cou
 - Cloudinary
 - Netlify, Heroku
 
-## Features
-
-- MongoDB: Setup Mongoose & Model
-- Middleware : User registration, User Login
-
 ## npm packages
 
 `npm install nodemon express mongoose cors dotenv bcryptjs jsonwebtoken body-parser`
